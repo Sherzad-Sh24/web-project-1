@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript von Bootstrap CDN  (möglichkeit 2 mit "defer")-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bootstrap Template</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md bg-dark fixed-top border-bottom blured"
+        style="--bs-bg-opacity: 0.8"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            Sherzad
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas"
+            aria-controls="offcanvas"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvas"
+            aria-labelledby="offcanvasLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasLabel">
+                <a class="nav-link" href="#"> </a>Sherzad
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item d-md-flex align-items-center d-none">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="hero-section pt-5 d-flex vw-100 vh-100 p-3 mx-auto flex-column align-items-center justify-content-center mb-5"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div
+                class="banner-content text-center text-white my-5 py-5"
+                style="--bs-bg-opacity: 0.1"
+              >
+                <h1 class="display-3">Web Dev Universe</h1>
+                <p class="lead mb-5">Lets do it together.</p>
+                <p
+                  class="lead"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subscribe-modal"
+                >
+                  <a
+                    href="#"
+                    class="btn btn-lg btn-light fw-bold border-white bg-info"
+                    >Contact</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2 class="text-center mb-5 display-5">Features</h2>
+        <div class="row">
+          <div class="col-lg-4 text-center mb-5">
+            <img
+              class="rounded-circle mb-3"
+              src="./assets/images/1.png"
+              alt="horse"
+              width="200"
+              height="200"
+            />
+            <h2 class="fw-normal">Heading</h2>
+            <p>
+              Some representative placeholder content for the three columns of
+              text below the carousel. This is the first column.
+            </p>
+            <p>
+              <a class="btn btn-secondary bg-primary" href="#"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4 text-center mb-5">
+            <img
+              class="rounded-circle mb-3"
+              src="./assets/images/4.png"
+              alt="horse"
+              width="200"
+              height="200"
+            />
+            <h2 class="fw-normal">Heading</h2>
+            <p>
+              Another exciting bit of representative placeholder content. This
+              time, we've moved on to the second column.
+            </p>
+            <p>
+              <a class="btn btn-secondary bg-primary" href="#"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4 text-center mb-5">
+            <img
+              class="rounded-circle mb-3"
+              src="./assets/images/6.png"
+              alt="horse"
+              width="200"
+              height="200"
+            />
+            <h2 class="fw-normal">Heading</h2>
+            <p>
+              And lastly this, the third column of representative placeholder
+              content.
+            </p>
+            <p>
+              <a class="btn btn-secondary bg-primary" href="#"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+      </section>
+      <section class="container">
+        <hr class="featurette-divider" />
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7 text-left">
+            <h2 class="featurette-heading fw-normal lh-1">
+              First featurette heading.
+              <span class="text-body-secondary">It'll blow your mind.</span>
+            </h2>
+            <p class="lead">
+              Some great placeholder content for the first featurette here.
+              Imagine some exciting prose here.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="img-fluid mx-auto rounded"
+              src="./assets/images/post-1.png "
+              width="500"
+              height="500"
+              alt="strand"
+            />
+          </div>
+        </div>
+
+        <hr class="featurette-divider my-5" />
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+              Oh yeah, it's that good.
+              <span class="text-body-secondary">See for yourself.</span>
+            </h2>
+            <p class="lead">
+              Another featurette? Of course. More placeholder content here to
+              give you an idea of how this layout would work with some actual
+              real-world content in place.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img
+              class="img-fluid mx-auto rounded"
+              src="./assets/images/post-2.png "
+              width="500"
+              height="500"
+              alt="strand"
+            />
+          </div>
+        </div>
+
+        <hr class="featurette-divider my-5" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              And lastly, this one.
+              <span class="text-body-secondary">Checkmate.</span>
+            </h2>
+            <p class="lead">
+              And yes, this is the last block of representative placeholder
+              content. Again, not really intended to be actually read, simply
+              here to give you a better view of what this would look like with
+              some actual content. Your content.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="img-fluid mx-auto rounded"
+              src="./assets/images/post-3.png "
+              width="500"
+              height="500"
+              alt="strand"
+            />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+      </section>
+      <!-- Posts section -->
+      <section class="home-posts py-5 bg-dark" id="projects">
+        <h2 class="display-5 text-center text-white mb-5">Projects</h2>
+        <div class="container">
+          <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+              <div class="card shadow-sm mb-3">
+                <img
+                  src="./assets/images/7.png"
+                  class="card-img-top"
+                  alt="Post Image"
+                />
+                <div class="card-body">
+                  <h3 class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <p class="small fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <a class="btn btn-primary btn-sm rounded-pill shadow-sm px-3">
+                    Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm mb-3">
+                <img
+                  src="./assets/images/4.png"
+                  class="card-img-top"
+                  alt="Post Image"
+                />
+                <div class="card-body">
+                  <h3 class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <p class="small fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <a class="btn btn-primary btn-sm rounded-pill shadow-sm px-3">
+                    Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm mb-3">
+                <img
+                  src="./assets/images/5.png"
+                  class="card-img-top"
+                  alt="Post Image"
+                />
+                <div class="card-body">
+                  <h3 class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <p class="small fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <a class="btn btn-primary btn-sm rounded-pill shadow-sm px-3">
+                    Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm mb-3">
+                <img
+                  src="./assets/images/6.png"
+                  class="card-img-top"
+                  alt="Post Image"
+                />
+                <div class="card-body">
+                  <h3 class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <p class="small fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <a class="btn btn-primary btn-sm rounded-pill shadow-sm px-3">
+                    Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm mb-3">
+                <img
+                  src="./assets/images/1.png"
+                  class="card-img-top"
+                  alt="Post Image"
+                />
+                <div class="card-body">
+                  <h3 class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <p class="small fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <a class="btn btn-primary btn-sm rounded-pill shadow-sm px-3">
+                    Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm mb-3">
+                <img
+                  src="./assets/images/2.png"
+                  class="card-img-top"
+                  alt="Post Image"
+                />
+                <div class="card-body">
+                  <h3 class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <p class="small fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <a class="btn btn-primary btn-sm rounded-pill shadow-sm px-3">
+                    Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm mb-3">
+                <img
+                  src="./assets/images/3.png"
+                  class="card-img-top"
+                  alt="Post Image"
+                />
+                <div class="card-body">
+                  <h3 class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <p class="small fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <a class="btn btn-primary btn-sm rounded-pill shadow-sm px-3">
+                    Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm mb-3">
+                <img
+                  src="./assets/images/8.png"
+                  class="card-img-top"
+                  alt="Post Image"
+                />
+                <div class="card-body">
+                  <h3 class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <p class="small fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <a class="btn btn-primary btn-sm rounded-pill shadow-sm px-3">
+                    Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-bg-dark p-4 text-center">
+      <p class="m-0">
+        <small>
+          copyright <sup>&copy;</sup> 2024. Alle Rechte Vorbehalten.
+        </small>
+      </p>
+    </footer>
+  </body>
+</html>
